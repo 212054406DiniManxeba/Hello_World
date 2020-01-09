@@ -7,7 +7,7 @@
 public class Hello_World
 {
 		//Declaration
-		String[] randomNames = {"Abongile","Tebogo","Moeketsi", "Tebogo", "Jabulani",
+		private static String[] randomNames = {"Abongile","Tebogo","Moeketsi", "Tebogo", "Jabulani",
 		"Kind", "Sisi", "Samuel", "Abongile", "Kindness", "Sisi", "Moeketsi", "Faith", "Jabu"};
 
 
@@ -19,11 +19,11 @@ public class Hello_World
 		}
 		
 		//This method takes in a string array and prints out the duplicates
-		public void readOutDuplicates(String[] names)
+		public static void readOutDuplicates(String[] names)
 		{
-			for(int x = 0; names.length; x++)
+			for(int x = 0; x > names.length; x++)
 			{
-				for(int y = x+1; names.length; y++)
+				for(int y = x+1; y > names.length; y++)
 				{
 					if(names[x].equalsIgnoreCase(names[y]))
 					{
