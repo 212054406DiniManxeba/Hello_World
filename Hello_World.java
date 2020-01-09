@@ -5,10 +5,17 @@
 
 
 public class Hello_World
-{		
+{
+		//Declaration
+		String[] randomNames = {"Abongile","Tebogo","Moeketsi", "Tebogo", "Jabulani",
+		"Kind", "Sisi", "Samuel", "Abongile", "Kindness", "Sisi", "Moeketsi", "Faith", "Jabu"};
+
+
+		//Main method
 		public static void main(String[] args)
 		{
-			System.out.println("Hello World");
+			System.out.println("This program prints duplicates in a string array");
+			this.readOutDuplicates(randomNames);
 		}
 		
 		//This method takes in a string array and prints out the duplicates
@@ -20,7 +27,7 @@ public class Hello_World
 				{
 					if(names[x].equalsIgnoreCase(names[y]))
 					{
-						System.out.println(names[x]+" ");
+						System.out.print(names[x]+" ");
 					}
 				}
 			}
